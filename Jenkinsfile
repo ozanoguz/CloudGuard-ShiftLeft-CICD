@@ -1,8 +1,8 @@
 pipeline {
       agent any
       environment {
-           CHKP_CLOUDGUARD_ID = credentials("CHKP_CLOUDGUARD_ID")
-           CHKP_CLOUDGUARD_SECRET = credentials("CHKP_CLOUDGUARD_SECRET")
+           SG_CLIENT_ID=credentials("CHKP_CLOUDGUARD_ID")
+           SG_SECRET_KEY=credentials("CHKP_CLOUDGUARD_SECRET")
         }
         
   stages {
